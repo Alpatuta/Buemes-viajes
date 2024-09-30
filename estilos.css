@@ -143,13 +143,15 @@ div img {
 .destino h3 {
   font-size: 20px;
   color: #c9002c;
-  margin: 10px 0;
+  margin: 10px 10px;
+  text-align: left;
 }
 
 .destino p {
   font-size: 15px;
   color: #8c857b;
-  margin: 10px 0;
+  margin: 10px 10px;
+  text-align: left;
 }
 
 .destino img {
