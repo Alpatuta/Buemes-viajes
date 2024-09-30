@@ -1,0 +1,10 @@
+Colores obligatorio:
+
+Color para el hover del navbar:
+#c9002c
+
+Back-ground-color que podria usar:
+#5b86a01a
+
+Fuentes:
+myMontserratFont, Arial, Helvetica, sans-serif;
