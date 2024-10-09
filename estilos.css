@@ -165,3 +165,12 @@ div img {
   background-color: #dddddd;
   text-align: center;
 }
+
+table {
+  width: 60%;
+  margin: 20px auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  background-color: #ffffff;
+}
