@@ -139,9 +139,8 @@ div img {
 .h2-custom2 {
   font-family: var(--main-font);
   font-size: 35px;
-  padding-bottom: 20px;
   margin-bottom: 20px;
-  color: #000000;
+  color: #dddddd;
 }
 
 .destinos {
@@ -241,11 +240,29 @@ tbody tr td:nth-child(odd) {
 }
 
 .comprar-paquetes {
-  background-image: url("img/suiza-img.jpg");
+  background-image: url("img/caribe-img.avif");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   text-align: center;
   padding-top: 90px;
+}
+
+form {
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  width: 40%;
+  font-family: var(--main-font);
+  border-radius: 5px;
+  border: 1px solid #c9002c;
+}
+
+form h3 {
+  font-size: 20px;
+  color: #0f0f0f;
+  margin: 10px 10px;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 10px;
 }
