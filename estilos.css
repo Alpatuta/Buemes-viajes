@@ -8,6 +8,7 @@
 
 :root {
   --main-font: "Montserrat", sans-serif;
+  --main-red: #c9002c;
 }
 
 body {
@@ -56,7 +57,7 @@ nav ul li {
   width: 0;
   bottom: 0;
   left: 0;
-  background-color: #c9002c;
+  background-color: var(--main-red);
   transition: all 0.3s ease;
 }
 
@@ -65,7 +66,7 @@ nav ul li {
 }
 
 li :hover {
-  color: #c9002c;
+  color: var(--main-red);
 }
 
 div img {
@@ -98,7 +99,7 @@ div img {
 }
 
 .btn-mas-informacion {
-  background-color: #c9002c;
+  background-color: var(--main-red);
   color: #ffffff;
   font-family: var(--main-font);
   font-size: 15px;
@@ -112,8 +113,8 @@ div img {
 
 .btn-mas-informacion:hover {
   background-color: #ffffff;
-  color: #c9002c;
-  border: 1px #c9002c solid;
+  color: var(--main-red);
+  border: 1px var(--main-red) solid;
 }
 
 .contenido {
@@ -154,7 +155,7 @@ div img {
 .destino {
   font-family: var(--main-font);
   border: 1px transparent #f0f0f0;
-  transition: all 0.1s ease;
+  transition: all 0.03s ease;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -162,7 +163,7 @@ div img {
 }
 
 .destino:hover {
-  border: 2px solid #c9002c;
+  border: 2px solid var(--main-red);
 }
 
 .destino h3 {
@@ -199,6 +200,7 @@ table {
   background-color: #ffffff;
   font-family: var(--main-font);
   font-size: 15px;
+  box-shadow: 1px 1px 8px #999999, -1px -1px 8px #999999;
 }
 
 tbody tr:nth-child(even) {
@@ -207,18 +209,18 @@ tbody tr:nth-child(even) {
 
 .btn-comprar {
   background-color: #ffffff;
-  color: #c9002c;
+  color: var(--main-red);
   font-family: var(--main-font);
   font-size: 12px;
   padding: 8px;
-  border: 1px #c9002c solid;
+  border: 1px var(--main-red) solid;
   border-radius: 5px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .btn-comprar:hover {
-  background-color: #c9002c;
+  background-color: var(--main-red);
   color: #ffffff;
 }
 
@@ -255,7 +257,7 @@ form {
   width: 40%;
   font-family: var(--main-font);
   border-radius: 5px;
-  border: 1px solid #c9002c;
+  box-shadow: 1px 1px 8px #444444, -1px -1px 8px #444444;
 }
 
 form h3 {
@@ -265,4 +267,8 @@ form h3 {
   text-align: left;
   padding-top: 20px;
   padding-left: 10px;
+}
+
+form .btn-comprar {
+  margin-bottom: 10px;
 }
