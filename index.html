@@ -21,7 +21,7 @@
           <li class="links"><a href="#destinos-destacados">Destinos</a></li>
           <li class="links"><a href="#prox-salidas">Proximas salidas</a></li>
           <li class="links"><a href="#comprar-paquetes">Comprar</a></li>
-          <li class="links"><a href="">Galeria</a></li>
+          <li class="links"><a href="#galeria">Galeria</a></li>
         </ul>
       </nav>
     </header>
@@ -42,7 +42,7 @@
       </div>
     </header>
 
-    <div id="destinos-destacados">
+    <section id="destinos-destacados">
       <h2 class="h2-custom">Destinos destacados</h2>
 
       <section class="destinos">
@@ -77,9 +77,9 @@
           <p>loremmmdaid</p>
         </div>
       </section>
-    </div>
+    </section>
 
-    <div id="prox-salidas">
+    <section id="prox-salidas">
       <h2 class="h2-custom">Proximas salidas</h2>
 
       <table>
@@ -92,65 +92,77 @@
         </thead>
         <tbody>
           <tr>
-            <td>Fecha Viaje</td>
+            <td class="td-fecha">Fecha Viaje</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
             </td>
-            <td><a class="btn-comprar" href="">Comprar</a></td>
+            <td><a class="btn-comprar" href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td>Fecha Viaje</td>
+            <td class="td-fecha">Fecha Viaje</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
             </td>
-            <td><a class="btn-comprar" href="">Comprar</a></td>
+            <td><a class="btn-comprar" href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td>Fecha Viaje</td>
+            <td class="td-fecha">Fecha Viaje</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
             </td>
-            <td><a class="btn-comprar" href="">Comprar</a></td>
+            <td><a class="btn-comprar" href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td>Fecha Viaje</td>
+            <td class="td-fecha">Fecha Viaje</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
             </td>
-            <td><a class="btn-comprar" href="">Comprar</a></td>
+            <td><a class="btn-comprar" href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td>Fecha Viaje</td>
+            <td class="td-fecha">Fecha Viaje</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
             </td>
-            <td><a class="btn-comprar" href="">Comprar</a></td>
+            <td><a class="btn-comprar" href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td>Fecha Viaje</td>
+            <td class="td-fecha">Fecha Viaje</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
             </td>
-            <td><a class="btn-comprar" href="">Comprar</a></td>
+            <td><a class="btn-comprar" href="#comprar-paquetes">Comprar</a></td>
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
 
-    <div id="comprar-paquetes">
-      <div class="formulario-comprar">
-        <h2 class="h2-custom2"><span>Comprar paquetes</span></h2>
+    <section id="comprar-paquetes">
+      <h2 class="h2-custom-paquetes">Comprar paquetes</h2>
+      <section class="formulario-comprar">
+        <h3>Completa los datos</h3>
         <form action="">
-          <h3>Completa los datos</h3>
+          <label for="nombreCompleto">Nombre completo</label><br />
+          <input type="text" id="nombreCompleto" name="nombre" /><br /><br />
+
+          <label for="email">Email</label><br />
+          <input type="text" id="email" name="email" /><br /><br />
+
           <a class="btn-comprar" href="">Comprar</a>
         </form>
+      </section>
+    </section>
+
+    <section id="galeria">
+      <div class="galeria-imagenes">
+        <h2 class="h2-custom">Galeria</h2>
       </div>
-    </div>
+    </section>
   </body>
 </html>
