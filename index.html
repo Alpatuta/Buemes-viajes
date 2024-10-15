@@ -28,17 +28,19 @@
 
     <header id="mas-informacion">
       <div class="contenido">
-        <p class="p-mas-informacion">Fechas paquete</p>
-        <h1 class="h1-mas-informacion">Destino</h1>
-        <p class="p-mas-informacion">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-          molestiae omnis sed, earum laboriosam eius id quae nostrum repellat
-          voluptatem nulla similique, exercitationem maiores iusto veniam quam
-          cupiditate vel corrupti.
-        </p>
-        <a class="btn-mas-informacion" href="#destinos-destacados"
-          >Mas informacion</a
-        >
+        <div class="centrado">
+          <p class="p-mas-informacion">Fechas paquete</p>
+          <h1 class="h1-mas-informacion">Destino</h1>
+          <p class="p-mas-informacion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            molestiae omnis sed, earum laboriosam eius id quae nostrum repellat
+            voluptatem nulla similique, exercitationem maiores iusto veniam quam
+            cupiditate vel corrupti.
+          </p>
+          <a class="btn-mas-informacion" href="#destinos-destacados"
+            >Mas informacion</a
+          >
+        </div>
       </div>
     </header>
 
@@ -146,15 +148,51 @@
     <section id="comprar-paquetes">
       <h2 class="h2-custom-paquetes">Comprar paquetes</h2>
       <section class="formulario-comprar">
-        <h3>Completa los datos</h3>
+        <h3 class="h3-paquete">Completa los datos</h3>
         <form action="">
           <label for="nombreCompleto">Nombre completo</label><br />
-          <input type="text" id="nombreCompleto" name="nombre" /><br /><br />
+          <input type="text" id="nombreCompleto" name="nombre" required/><br /><br />
 
           <label for="email">Email</label><br />
-          <input type="text" id="email" name="email" /><br /><br />
+          <input type="text" id="email" name="email" required/><br /><br />
 
-          <a class="btn-comprar" href="">Comprar</a>
+          <input type="radio" id="femenino" name="radio">
+          <label for="femenino">Femenino</label>
+
+          <input type="radio" id="masculino" name="radio">
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" id="otro" name="radio">
+          <label for="otro">Otro</label>
+          <br><br>
+          <label for="paquete">Paquete</label><br>
+          <select name="" id="paquete">
+            <option value="#">Seleccione un paquete</option>
+            <option value="p1">p1</option>
+            <option value="p2">p2</option>
+            <option value="p3">p3</option>
+            <option value="p4">p4</option>
+            <option value="p5">p5</option>
+            <option value="p6">p6</option>
+          </select>
+          <br><br>
+          <label for="personas">Personas</label><br>
+          <select name="" id="personas">
+            <option value="#">Seleccione la cantidad de personas</option>
+            <option value="p1">p1</option>
+            <option value="p2">p2</option>
+            <option value="p3">p3</option>
+            <option value="p4">p4</option>
+            <option value="p5">p5</option>
+            <option value="p6">p6</option>
+          </select>
+          <br><br>
+          
+          <label for="checkbox-1">Acepto terminos y condiciones</label>
+          <input type="checkbox" value="1" id="checkbox-1" name="checkbox" >
+
+          <input type="submit" class="btn-comprar" href="" value="Comprar"></input>
+
         </form>
       </section>
     </section>
