@@ -150,23 +150,26 @@
       <section class="formulario-comprar">
         <h3 class="h3-paquete">Completa los datos</h3>
         <form action="">
-          <label for="nombreCompleto">Nombre completo</label><br />
-          <input type="text" id="nombreCompleto" name="nombre" required/><br /><br />
+          <label for="nombreCompleto" class="textos-form">Nombre completo</label><br />
+          <input type="text" id="nombreCompleto" name="nombre" class="input-form" required/><br /><br />
 
-          <label for="email">Email</label><br />
-          <input type="text" id="email" name="email" required/><br /><br />
+          <label for="email" class="textos-form">Email</label><br />
+          <input type="text" id="email" name="email" class="input-form" required/><br /><br />
 
-          <input type="radio" id="femenino" name="radio">
-          <label for="femenino">Femenino</label>
-
-          <input type="radio" id="masculino" name="radio">
-          <label for="masculino">Masculino</label>
-
-          <input type="radio" id="otro" name="radio">
-          <label for="otro">Otro</label>
+          <div class="genero-form">
+            <input type="radio" id="femenino" name="radio">
+            <label for="femenino" class="textos-form">Femenino</label>
+  
+            <input type="radio" id="masculino" name="radio">
+            <label for="masculino" class="textos-form">Masculino</label>
+  
+            <input type="radio" id="otro" name="radio">
+            <label for="otro" class="textos-form">Otro</label>
+          </div>
+       
           <br><br>
-          <label for="paquete">Paquete</label><br>
-          <select name="" id="paquete">
+          <label for="paquete" class="textos-form">Paquete</label><br>
+          <select name="" id="paquete" class="input-form">
             <option value="#">Seleccione un paquete</option>
             <option value="p1">p1</option>
             <option value="p2">p2</option>
@@ -176,19 +179,19 @@
             <option value="p6">p6</option>
           </select>
           <br><br>
-          <label for="personas">Personas</label><br>
-          <select name="" id="personas">
-            <option value="#">Seleccione la cantidad de personas</option>
-            <option value="p1">p1</option>
-            <option value="p2">p2</option>
-            <option value="p3">p3</option>
-            <option value="p4">p4</option>
-            <option value="p5">p5</option>
-            <option value="p6">p6</option>
+          <label for="personas" class="textos-form">Personas</label><br>
+          <select name="" id="personas" class="input-form">
+            <option value="">Seleccione la cantidad de personas</option>
+            <option value="p1">1</option>
+            <option value="p2">2</option>
+            <option value="p3">3</option>
+            <option value="p4">4</option>
+            <option value="p5">5</option>
+            <option value="p6">6</option>
           </select>
           <br><br>
           
-          <label for="checkbox-1">Acepto terminos y condiciones</label>
+          <label for="checkbox-1" class="textos-form">Acepto terminos y condiciones</label>
           <input type="checkbox" value="1" id="checkbox-1" name="checkbox" >
 
           <input type="submit" class="btn-comprar" href="" value="Comprar"></input>
