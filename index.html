@@ -12,23 +12,25 @@
   </head>
   <body>
     <header>
-      <figure>
-        <img src="img/buemes-logo.svg" alt="Logotipo Buemes viajes" />
-      </figure>
+      <div class="centrado">
+        <figure>
+          <img src="img/buemes-logo.svg" alt="Logotipo Buemes viajes" />
+        </figure>
 
-      <nav>
-        <ul>
-          <li class="links"><a href="#destinos-destacados">Destinos</a></li>
-          <li class="links"><a href="#prox-salidas">Proximas salidas</a></li>
-          <li class="links"><a href="#comprar-paquetes">Comprar</a></li>
-          <li class="links"><a href="#galeria">Galeria</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li class="links"><a href="#destinos-destacados">Destinos</a></li>
+            <li class="links"><a href="#prox-salidas">Proximas salidas</a></li>
+            <li class="links"><a href="#comprar-paquetes">Comprar</a></li>
+            <li class="links"><a href="#galeria">Galeria</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <header id="mas-informacion">
-      <div class="contenido">
-        <div class="centrado">
+      <section class="centrado">
+        <div class="contenido">
           <p class="p-mas-informacion">Fechas paquete</p>
           <h1 class="h1-mas-informacion">Destino</h1>
           <p class="p-mas-informacion">
@@ -41,48 +43,54 @@
             >Mas informacion</a
           >
         </div>
-      </div>
+      </section>
     </header>
 
-    <section id="destinos-destacados">
-      <h2 class="h2-custom">Destinos destacados</h2>
+    <main>
+      <section id="destinos-destacados">
+        <h2 class="h2-customizado">Destinos destacados</h2>
 
-      <section class="destinos">
-        <div class="destino">
-          <img src="img/cancún-img.jpg" alt="" />
-          <h3>Cancún</h3>
-          <p>loloremmmdaid</p>
-        </div>
-        <div class="destino">
-          <img src="img/roma-img.jpg" alt="" />
-          <h3>Roma</h3>
-          <p>loloremmmdaid</p>
-        </div>
-        <div class="destino">
-          <img src="img/miami-img.jpg" alt="" />
-          <h3>Miami</h3>
-          <p>loremmmdaid</p>
-        </div>
-        <div class="destino">
-          <img src="img/paris-img.jpg" alt="" />
-          <h3>París</h3>
-          <p>loremmmdaid</p>
-        </div>
-        <div class="destino">
-          <img src="img/florianopolis-img-min.jpg" alt="" />
-          <h3>Florianoplois</h3>
-          <p>loremmmdaid</p>
-        </div>
-        <div class="destino">
-          <img src="img/londres-img.jpg" alt="" />
-          <h3>Londres</h3>
-          <p>loremmmdaid</p>
+        <div class="destinos">
+          <article class="destino">
+            <figure><img src="img/cancún-img.jpg" alt="" /></figure>
+            <div>
+              <h3>Cancún</h3>
+              <p>loloremmmdaid</p>
+            </div>
+          </article>
+          <article class="destino">
+            <figure>
+              <img src="img/roma-img.jpg" alt="" />
+            </figure>
+            <h3>Roma</h3>
+            <p>loloremmmdaid</p>
+          </article>
+          <article class="destino">
+            <figure><img src="img/miami-img.jpg" alt="" /></figure>
+            <h3>Miami</h3>
+            <p>loremmmdaid</p>
+          </article>
+          <article class="destino">
+            <figure><img src="img/paris-img.jpg" alt="" /></figure>
+            <h3>París</h3>
+            <p>loremmmdaid</p>
+          </article>
+          <article class="destino">
+            <figure><img src="img/florianopolis-img-min.jpg" alt="" /></figure>
+            <h3>Florianoplois</h3>
+            <p>loremmmdaid</p>
+          </article>
+          <article class="destino">
+            <figure><img src="img/londres-img.jpg" alt="" /></figure>
+            <h3>Londres</h3>
+            <p>loremmmdaid</p>
+          </article>
         </div>
       </section>
-    </section>
+    </main>
 
     <section id="prox-salidas">
-      <h2 class="h2-custom">Proximas salidas</h2>
+      <h2 class="h2-customizado">Proximas salidas</h2>
 
       <table>
         <thead>
@@ -143,67 +151,6 @@
           </tr>
         </tbody>
       </table>
-    </section>
-
-    <section id="comprar-paquetes">
-      <h2 class="h2-custom-paquetes">Comprar paquetes</h2>
-      <section class="formulario-comprar">
-        <h3 class="h3-paquete">Completa los datos</h3>
-        <form action="">
-          <label for="nombreCompleto" class="textos-form">Nombre completo</label><br />
-          <input type="text" id="nombreCompleto" name="nombre" class="input-form" required/><br /><br />
-
-          <label for="email" class="textos-form">Email</label><br />
-          <input type="text" id="email" name="email" class="input-form" required/><br /><br />
-
-          <div class="genero-form">
-            <input type="radio" id="femenino" name="radio">
-            <label for="femenino" class="textos-form">Femenino</label>
-  
-            <input type="radio" id="masculino" name="radio">
-            <label for="masculino" class="textos-form">Masculino</label>
-  
-            <input type="radio" id="otro" name="radio">
-            <label for="otro" class="textos-form">Otro</label>
-          </div>
-       
-          <br><br>
-          <label for="paquete" class="textos-form">Paquete</label><br>
-          <select name="" id="paquete" class="input-form">
-            <option value="#">Seleccione un paquete</option>
-            <option value="p1">p1</option>
-            <option value="p2">p2</option>
-            <option value="p3">p3</option>
-            <option value="p4">p4</option>
-            <option value="p5">p5</option>
-            <option value="p6">p6</option>
-          </select>
-          <br><br>
-          <label for="personas" class="textos-form">Personas</label><br>
-          <select name="" id="personas" class="input-form">
-            <option value="">Seleccione la cantidad de personas</option>
-            <option value="p1">1</option>
-            <option value="p2">2</option>
-            <option value="p3">3</option>
-            <option value="p4">4</option>
-            <option value="p5">5</option>
-            <option value="p6">6</option>
-          </select>
-          <br><br>
-          
-          <label for="checkbox-1" class="textos-form">Acepto terminos y condiciones</label>
-          <input type="checkbox" value="1" id="checkbox-1" name="checkbox" >
-
-          <input type="submit" class="btn-comprar" href="" value="Comprar"></input>
-
-        </form>
-      </section>
-    </section>
-
-    <section id="galeria">
-      <div class="galeria-imagenes">
-        <h2 class="h2-custom">Galeria</h2>
-      </div>
     </section>
   </body>
 </html>

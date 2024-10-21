@@ -7,23 +7,30 @@
 }
 
 :root {
-  --main-font: "Montserrat", sans-serif;
-  --main-red: #c9002c;
+  --fuente: "Montserrat", sans-serif;
+  --rojo-principal: #c9002c;
   scroll-behavior: smooth;
+  --ancho-contenedor: 1280px;
 }
 
 body {
   margin: 0 auto;
-  max-width: 1280px;
-  background-color: #f5f5f5;
-  font-family: var(--main-font);
+  font-family: var(--fuente);
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   background-color: #ffffff;
-  padding: 0 100px;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .centrado {
+  margin: 0 auto;
+  width: var(--ancho-contenedor);
 }
 
 header figure img {
@@ -63,7 +70,7 @@ nav {
   width: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--main-red);
+  background-color: var(--rojo-principal);
   transition: all 0.3s ease;
 }
 
@@ -72,20 +79,18 @@ nav {
 }
 
 li :hover {
-  color: var(--main-red);
-}
-
-div img {
-  width: 100%;
-  height: 100%;
+  color: var(--rojo-principal);
 }
 
 #mas-informacion {
   background-image: url("img/bariloche-img.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh;
-  position: relative;
+  height: auto;
+}
+
+.contenido {
+  padding: 80px 0;
 }
 
 .p-mas-informacion {
@@ -105,9 +110,9 @@ div img {
 }
 
 .btn-mas-informacion {
-  background-color: var(--main-red);
+  background-color: var(--rojo-principal);
   color: #ffffff;
-  font-family: var(--main-font);
+  font-family: var(--fuente);
   font-size: 15px;
   padding: 15px 25px;
   border: 1px transparent solid;
@@ -121,15 +126,15 @@ div img {
 
 .btn-mas-informacion:hover {
   background-color: #ffffff;
-  color: var(--main-red);
-  border: 1px var(--main-red) solid;
+  color: var(--rojo-principal);
+  border: 1px var(--rojo-principal) solid;
   text-shadow: none;
 }
 
-#mas-informacion .contenido {
+#mas-informacion {
   display: flex;
   align-items: flex-end;
-  height: 500px;
+  height: 600px;
   color: #fff;
 }
 
@@ -139,19 +144,19 @@ div img {
   text-align: center;
 }
 
-.h2-custom {
+#destinos-destacados .destinos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: var(--ancho-contenedor);
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.h2-customizado {
   font-size: 35px;
   padding-bottom: 20px;
   margin-bottom: 20px;
   color: #be0000;
-}
-
-.destinos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 1000px;
-  margin: 0 auto;
-  gap: 20px;
 }
 
 .destino {
@@ -159,12 +164,11 @@ div img {
   transition: all 0.03s ease;
   padding: 5px;
   border-radius: 5px;
-  cursor: pointer;
   background-color: #f0f0f0;
 }
 
 .destino:hover {
-  border: 2px solid var(--main-red);
+  border: 2px solid var(--rojo-principal);
 }
 
 .destino h3 {
@@ -181,9 +185,10 @@ div img {
   text-align: left;
 }
 
-.destino img {
-  width: 95%;
-  height: 75%;
+.destino figure img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
   border-radius: 5px;
 }
 
@@ -209,11 +214,11 @@ tbody tr:nth-child(even) {
 
 .btn-comprar {
   background-color: #ffffff;
-  color: var(--main-red);
-  font-family: var(--main-font);
+  color: var(--rojo-principal);
+  font-family: var(--fuente);
   font-size: 12px;
   padding: 8px;
-  border: 1px var(--main-red) solid;
+  border: 1px var(--rojo-principal) solid;
   border-radius: 5px;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -222,12 +227,12 @@ tbody tr:nth-child(even) {
 }
 
 .btn-comprar:hover {
-  background-color: var(--main-red);
+  background-color: var(--rojo-principal);
   color: #ffffff;
 }
 
 .td-fecha {
-  color: var(--main-red);
+  color: var(--rojo-principal);
   font-weight: 600;
 }
 
@@ -246,72 +251,4 @@ tbody tr td {
 
 tbody tr td:nth-child(odd) {
   text-align: center;
-}
-
-#comprar-paquetes {
-  background-image: url("img/caribe-img.avif");
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  position: relative;
-  text-align: center;
-  padding-top: 90px;
-}
-
-.h2-custom-paquetes {
-  font-size: 35px;
-  margin-bottom: 30px;
-  color: #dddddd;
-  text-shadow: 0px 0px 5px #000000;
-}
-
-.h3-paquete {
-  padding: 20px;
-}
-
-.formulario-comprar {
-  background-color: #f0f0f0;
-  margin: 0 auto;
-  width: 40%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 8px #444444, -1px -1px 8px #444444;
-}
-
-.formulario-comprar h3 {
-  font-size: 20px;
-  color: #0f0f0f;
-  margin: 10px 10px;
-  text-align: left;
-  padding-top: 20px;
-  padding-left: 10px;
-}
-
-form .btn-comprar {
-  margin-bottom: 10px;
-}
-
-#galeria {
-  padding: 70px 0px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.textos-form {
-  font-size: 13px;
-  color: #000000;
-  font-weight: 600;
-}
-
-.input-form {
-  font-size: 12px;
-  padding: 7px;
-  width: 90%;
-  border-radius: 3px;
-  font-family: var(--main-font);
-}
-
-.genero-form {
-  padding-left: 30px;
-  display: flex;
-  gap: 5px;
 }
