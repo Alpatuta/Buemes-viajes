@@ -278,7 +278,7 @@ tbody tr td:nth-child(odd) {
   text-shadow: 0 0 5px var(--negro);
 }
 
-#comprar-paquetes .contenido {
+#comprar-paquetes .centrado .contenido {
   background-color: var(--blanco-secundario);
   padding: 20px;
   margin-bottom: 50px;
