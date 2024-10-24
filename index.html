@@ -110,7 +110,7 @@
         </thead>
         <tbody>
           <tr>
-            <td class="td-fecha">Fecha Viaje</td>
+            <td class="td-fecha">20/12/2024</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
@@ -118,7 +118,7 @@
             <td><a href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td class="td-fecha">Fecha Viaje</td>
+            <td class="td-fecha">05/01/2025</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
@@ -126,7 +126,7 @@
             <td><a href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td class="td-fecha">Fecha Viaje</td>
+            <td class="td-fecha">16/01/2025</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
@@ -134,7 +134,7 @@
             <td><a href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td class="td-fecha">Fecha Viaje</td>
+            <td class="td-fecha">22/01/2025</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
@@ -142,7 +142,7 @@
             <td><a href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td class="td-fecha">Fecha Viaje</td>
+            <td class="td-fecha">03/02/2025</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
@@ -150,7 +150,7 @@
             <td><a href="#comprar-paquetes">Comprar</a></td>
           </tr>
           <tr>
-            <td class="td-fecha">Fecha Viaje</td>
+            <td class="td-fecha">12/02/2025</td>
             <td>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Accusamus dolore earum expedita facilis quidem impedit
@@ -159,6 +159,76 @@
           </tr>
         </tbody>
       </table>
+    </section>
+
+    <section id="comprar-paquetes">
+      <div class="centrado">
+        <h2 class="h2-customizado sombra">Comprar paquetes</h2>
+        <div class="contenido">
+          <form action="">
+            <h3>Completa los datos</h3>
+            <label for="nombre">Nombre completo: </label>
+            <div class="contenido-campos">
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+
+            <label for="email">Email: </label>
+            <div class="contenido-campos">
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="contenedor-radio">
+              <article class="opcion-radio">
+                <input type="radio" name="radio" id="femenino" checked />
+                <label for="femenino">Femenino</label>
+              </article>
+
+              <article class="opcion-radio">
+                <input type="radio" name="radio" id="masculino" />
+                <label for="masculino">Masculino</label>
+              </article>
+
+              <article class="opcion-radio">
+                <input type="radio" name="radio" id="otro" />
+                <label for="otro">Otro</label>
+              </article>
+            </div>
+
+            <label for="paquete">Paquete</label>
+            <select name="paquete" id="paquete">
+              <option value="">Selecciona el paquete</option>
+              <option value="cancun">Cancún</option>
+              <option value="roma">Roma</option>
+              <option value="miami">Miami</option>
+              <option value="paris">París</option>
+              <option value="florianopolis">Florianópolis</option>
+              <option value="londres">Londres</option>
+            </select>
+
+            <label for="personas">Cantidad de personas</label>
+            <select name="personas" id="personas">
+              <option value="">Selecciona la cantidad de personas</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+
+            <div class="terminos-comprar">
+              <article class="terminos">
+                <input type="checkbox" id="terminosycon" />
+                <label for="terminosycon">
+                  Acepto los términos y condiciones de compra
+                </label>
+              </article>
+
+              <input type="submit" value="Comprar" class="subir-datos" />
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </body>
 </html>

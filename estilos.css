@@ -12,21 +12,25 @@
   --blanco: #ffffff;
   --blanco-secundario: #f0f0f0;
   --negro: #000000;
+  --gris-claro: #999999;
+  --borde: 5px;
+  --trancision-botones: all 0.3 ease;
   --ancho-contenedor: 1280px;
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0 auto;
   font-family: var(--fuente);
 }
 
 .h2-customizado {
-  font-size: 35px;
+  font-size: 40px;
   padding-bottom: 20px;
   margin-bottom: 20px;
   color: #be0000;
 }
+
+/* Navbar */
 
 header {
   background-color: var(--blanco);
@@ -81,7 +85,7 @@ header nav {
   bottom: 0;
   left: 0;
   background-color: var(--rojo-principal);
-  transition: all 0.3s ease;
+  transition: var(--trancision-botones);
 }
 
 .links a:hover::after {
@@ -92,15 +96,15 @@ li :hover {
   color: var(--rojo-principal);
 }
 
+/* Mas informacion */
+
 #mas-informacion {
   background-image: url("img/bariloche-img.jpg");
   background-size: cover;
   background-position: center;
-  height: auto;
   display: flex;
   align-items: flex-end;
-  height: 600px;
-  color: var(--blanco);
+  height: 90vh;
 }
 
 #mas-informacion .centrado .contenido {
@@ -130,9 +134,9 @@ li :hover {
   font-size: 15px;
   padding: 15px 25px;
   border: 1px transparent solid;
-  border-radius: 5px;
+  border-radius: var(--borde);
   margin-top: 20px;
-  transition: all 0.3s ease;
+  transition: var(--trancision-botones);
   text-decoration: none;
   display: inline-block;
   text-shadow: 0px 0px 5px var(--negro);
@@ -144,6 +148,8 @@ li :hover {
   border: 1px var(--rojo-principal) solid;
   text-shadow: none;
 }
+
+/* Destinos destacados*/
 
 main #destinos-destacados {
   padding: 70px 0px;
@@ -160,15 +166,9 @@ main #destinos-destacados .destinos {
 }
 
 main #destinos-destacados .destinos .destino {
-  border: 1px transparent var(--blanco-secundario);
-  transition: all 0.03s ease;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: var(--borde);
   background-color: var(--blanco-secundario);
-}
-
-main #destinos-destacados .destinos .destino:hover {
-  border: 2px solid var(--rojo-principal);
 }
 
 main #destinos-destacados .destinos .destino div h3 {
@@ -189,8 +189,10 @@ main #destinos-destacados .destinos .destino figure img {
   width: 100%;
   height: 230px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: var(--borde);
 }
+
+/* Proximas salidas */
 
 #prox-salidas {
   padding: 70px 0px;
@@ -205,7 +207,7 @@ table {
   border-collapse: collapse;
   background-color: var(--blanco);
   font-size: 15px;
-  box-shadow: 1px 1px 8px #999999, -1px -1px 8px #999999;
+  box-shadow: 1px 1px 8px var(--gris-claro), -1px -1px 8px var(--gris-claro);
 }
 
 tbody tr:nth-child(even) {
@@ -219,8 +221,8 @@ table tbody tr td a {
   font-size: 12px;
   padding: 8px;
   border: 1px var(--rojo-principal) solid;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+  border-radius: var(--borde);
+  transition: var(--trancision-botones);
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -251,4 +253,94 @@ tbody tr td {
 
 tbody tr td:nth-child(odd) {
   text-align: center;
+}
+
+/* Paquetes */
+
+#comprar-paquetes {
+  background: url("img/caribe-img.avif") center/cover;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+#comprar-paquetes .centrado {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.h2-customizado.sombra {
+  font-size: 40px;
+  padding: 70px 0 20px;
+  margin-bottom: 20px;
+  color: var(--blanco);
+  text-align: center;
+  text-shadow: 0 0 5px var(--negro);
+}
+
+.contenido {
+  background-color: var(--blanco-secundario);
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: var(--borde);
+  box-shadow: 1px 1px 8px var(--gris-claro), -1px -1px 8px var(--gris-claro);
+}
+
+form h3 {
+  font-size: 25px;
+  padding-bottom: 40px;
+  color: #be0000;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 20px;
+  border: 1px solid var(--gris-claro);
+  border-radius: var(--borde);
+  font-family: var(--fuente);
+}
+
+.contenedor-radio,
+.terminos-comprar {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.opcion-radio,
+.terminos {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.terminos label {
+  font-size: 13px;
+}
+
+.subir-datos {
+  padding: 10px 35px;
+  border-radius: var(--borde);
+  border: 1px solid var(--rojo-principal);
+  background-color: var(--rojo-principal);
+  color: var(--blanco);
+  font-family: var(--fuente);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--trancision-botones);
+}
+
+.subir-datos:hover {
+  background-color: var(--blanco);
+  color: var(--rojo-principal);
 }
