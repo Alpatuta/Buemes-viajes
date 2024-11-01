@@ -8,3 +8,5 @@ Back-ground-color que podria usar:
 
 Fuentes:
 myMontserratFont, Arial, Helvetica, sans-serif;
+
+Prontos los estilos.

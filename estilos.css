@@ -7,15 +7,17 @@
 }
 
 :root {
-  --fuente: "Montserrat", sans-serif;
   --rojo-principal: #c9002c;
   --blanco: #ffffff;
   --blanco-secundario: #f0f0f0;
   --negro: #000000;
   --gris-claro: #999999;
+  --gris: #8c857b;
+  --fuente: "Montserrat", sans-serif;
   --borde: 5px;
   --trancision-botones: all 0.3s ease;
   --ancho-contenedor: 1280px;
+  --margen-centrado: 0 auto;
   scroll-behavior: smooth;
 }
 
@@ -43,7 +45,7 @@ header > div {
 }
 
 header .centrado {
-  margin: 0 auto;
+  margin: var(--margen-centrado);
   width: var(--ancho-contenedor);
 }
 
@@ -71,7 +73,7 @@ header nav {
 
 .links a {
   text-decoration: none;
-  color: #8c857b;
+  color: var(--gris);
   font-weight: 500;
   position: relative;
   padding-bottom: 5px;
@@ -106,7 +108,7 @@ li :hover {
 }
 
 #mas-informacion .centrado {
-  color: #fff;
+  color: var(--blanco);
   height: 100%;
 }
 
@@ -172,7 +174,7 @@ main #destinos-destacados .destinos {
   display: flex;
   flex-wrap: wrap;
   width: var(--ancho-contenedor);
-  margin: 0 auto;
+  margin: var(--margen-centrado);
   gap: 20px;
 }
 
@@ -193,7 +195,7 @@ main #destinos-destacados .destinos .destino div h3 {
 
 main #destinos-destacados .destinos .destino div p {
   font-size: 15px;
-  color: #8c857b;
+  color: var(--gris);
   margin: 10px 10px;
   text-align: left;
 }
@@ -292,7 +294,7 @@ tbody tr td:nth-child(even) {
 }
 
 #comprar-paquetes .centrado {
-  margin: 0 auto;
+  margin: var(--margen-centrado);
   padding: 20px;
 }
 
@@ -377,7 +379,7 @@ select {
 #galeria {
   padding-top: 70px;
   width: var(--ancho-contenedor);
-  margin: 0 auto;
+  margin: var(--margen-centrado);
   background-color: var(--blanco);
 }
 
